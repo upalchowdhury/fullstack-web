@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request, Blueprint
 from flask.helpers import send_from_directory
 # from  scripts.fullTrain import getdata, train
+from flask import current_app
 from scripts.fullTrain import getdata, train
 from scripts.upload_To_Pinata import main
 # from contract_scripts.set_tokenuri import main
@@ -12,7 +13,7 @@ import os
 app = Flask(__name__, static_folder='../build', static_url_path='/')
 CORS(app)
 
-api = Blueprint('api', __name__)
+# api = Blueprint('api', __name__)
 ####### Trainning vars and get data ######
 DATA_PATH = './images/'
 EPOCHS = 5
@@ -44,7 +45,7 @@ def mint():
 def serve():
     return app.send_static_file('index.html')
     # return app.send_from_directory(app.static_folder,'index.html')
-app.register_blueprint(api, url_prefix='/api')
+# app.register_blueprint(api, url_prefix='/api')
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", threaded=True, port=port)

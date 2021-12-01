@@ -8,9 +8,9 @@ ENV FLASK_ENV=production
 
 COPY ./requirements.txt .
 
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 COPY . .
 
-ENTRYPOINT [ "flask" ]
-CMD ["run", "--host=0.0.0.0", "--port=5000"]
+EXPOSE 5000
+CMD ["gunicorn", "-b", ":5000", "app:app"]
