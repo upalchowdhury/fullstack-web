@@ -1,0 +1,60 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "proxy":"http://127.0.0.1:5000/predict",
+  "private": true,
+  "dependencies": {
+    "@alch/alchemy-web3": "^1.1.8",
+    "@chakra-ui/react": "^1.7.0",
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "@ethersproject/units": "^5.4.0",
+    "@fontsource/inter": "^4.5.0",
+    "@material-ui/core": "^4.12.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/react-leaflet": "^2.8.2",
+    "@usedapp/core": "^0.5.4",
+    "axios": "^0.19.2",
+    "customize-cra": "^1.0.0",
+    "dotenv": "^10.0.0",
+    "ethers": "^5.5.1",
+    "framer-motion": "^5.3.0",
+    "fs": "^0.0.1-security",
+    "gh-pages": "^3.1.0",
+    "react": "^17.0.2",
+    "react-app-rewired": "^2.1.8",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "semantic-ui-react": "^1.2.0",
+    "typescript": "^4.4.4",
+    "web-vitals": "^1.0.1"
+  },
+  
+  "scripts": {
+    
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "babel-cli": "^6.26.0"
+  }
+}
