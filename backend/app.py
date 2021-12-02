@@ -19,7 +19,7 @@ DATA_PATH = './images/'
 EPOCHS = 5
 
 train_dataset = getdata(DATA_PATH)
-ipfsfilepath = "../build/ipfs.json"
+ipfsfilepath = "./ipfs.json"
 
 
 
