@@ -1,7 +1,6 @@
 
 
 import tensorflow as tf
-from tensorflow import keras
 from tensorflow.keras.layers import Input, Reshape, Dropout, Dense 
 from tensorflow.keras.layers import Flatten, BatchNormalization
 from tensorflow.keras.layers import Activation, ZeroPadding2D
@@ -9,7 +8,6 @@ from tensorflow.keras.layers import LeakyReLU
 from tensorflow.keras.layers import UpSampling2D, Conv2D
 from tensorflow.keras.models import Sequential, Model, load_model
 from tensorflow.keras.optimizers import Adam
-
 import numpy as np
 from PIL import Image
 from tqdm import tqdm
@@ -207,8 +205,8 @@ def discriminator_loss(real_output, fake_output):
 def generator_loss(fake_output):
     return cross_entropy(tf.ones_like(fake_output), fake_output)
 
-generator_optimizer = Adam(1.5e-4,0.5)
-discriminator_optimizer = Adam(1.5e-4,0.5)
+generator_optimizer = tf.keras.optimizers.Adam(1.5e-4,0.5)
+discriminator_optimizer = tf.keras.optimizers.Adam(1.5e-4,0.5)
 
 @tf.function
 def train_step(images):
