@@ -17,8 +17,8 @@ tqdm
 Werkzeug
 eth-brownie
 brownie
-tensorflow==2.6.0
-keras==2.6.0
+tensorflow
+keras
 #tensorflow-addons
 #tensorflow-datasets==4.4.0
 #tensorflow-estimator
