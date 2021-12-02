@@ -1,5 +1,5 @@
 click==7.1.2
-Pillow
+# Pillow
 flask 
 flask-cors
 matplotlib
@@ -17,7 +17,7 @@ tqdm
 Werkzeug
 eth-brownie
 brownie
-tensorflow
+tensorflow==2.6.0
 keras
 #tensorflow-addons
 #tensorflow-datasets==4.4.0
