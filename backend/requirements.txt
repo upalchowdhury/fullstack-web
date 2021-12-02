@@ -18,7 +18,6 @@ Werkzeug
 eth-brownie
 brownie
 tensorflow==2.6.0
-keras
 #tensorflow-addons
 #tensorflow-datasets==4.4.0
 #tensorflow-estimator

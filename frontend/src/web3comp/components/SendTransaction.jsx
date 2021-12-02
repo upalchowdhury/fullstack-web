@@ -27,7 +27,7 @@ export default function Count() {
   const [value, setValue] = useState("");
   
   function generate(){
-        axios.post("https://backend-sol.herokuapp.com/predict", {"digit": value})
+        axios.post("/predict", {"digit": value})
         .then((response) => {
           console.log(response);
          // document.getElementsByClassName("sentiment-text")[0].innerText = response["data"]["sentiment"];
