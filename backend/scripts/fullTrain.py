@@ -2,13 +2,13 @@
 
 import tensorflow as tf
 from tensorflow import keras
-from keras.layers import Input, Reshape, Dropout, Dense 
-from keras.layers import Flatten, BatchNormalization
-from keras.layers import Activation, ZeroPadding2D
-from keras.layers import LeakyReLU
-from keras.layers import UpSampling2D, Conv2D
-from keras.models import Sequential, Model, load_model
-from keras.optimizers import Adam
+from tensorflow.keras.layers import Input, Reshape, Dropout, Dense 
+from tensorflow.keras.layers import Flatten, BatchNormalization
+from tensorflow.keras.layers import Activation, ZeroPadding2D
+from tensorflow.keras.layers import LeakyReLU
+from tensorflow.keras.layers import UpSampling2D, Conv2D
+from tensorflow.keras.models import Sequential, Model, load_model
+from tensorflow.keras.optimizers import Adam
 
 import numpy as np
 from PIL import Image
